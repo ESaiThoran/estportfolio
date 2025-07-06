@@ -553,7 +553,7 @@ function App() {
                 transition={{ duration: 0.3 }}
               >
                 <img 
-                  src="/picvid/photosai1.jpg" 
+                  src="https://img.freepik.com/free-photo/3d-illustration-young-man-with-brown-coat-brown-jacket_1057-44573.jpg" 
                   alt="Sai Thoran" 
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-cyan-400/30"
                   loading="lazy"
@@ -791,18 +791,13 @@ function App() {
       {/* OPTIMIZED Certifications Section - Smooth and fast */}
       <section id="certifications" className="py-20 md:py-32 relative overflow-hidden min-h-screen" ref={certificationsRef}>
         {/* Static background image - no animation for better performance */}
-        <div className="absolute inset-0 overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover brightness-[4.0] contrast-[1.0]"
-          >
-            <source src="/picvid/cb.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://i.pinimg.com/originals/2e/73/92/2e7392bd69172cb64fb648d6a5abb830.gif")',
+            filter: 'brightness(4.0) contrast(1.0)'
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/70 to-black/80" />
         
         <div className="container mx-auto px-4 md:px-8 lg:px-32 relative z-10 flex flex-col justify-center min-h-screen">
