@@ -502,7 +502,7 @@ function App() {
                   <span className="text-sm md:text-base">GitHub</span>
                 </motion.a>
                 <motion.a 
-                  href="https://github.com/ESaiThoran/My-certificate/blob/main/README.md" 
+                  href="https://github.com/ESaiThoran/My-certificate/blob/main/My_Resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="social-button glow-button flex items-center space-x-2 bg-green-600 hover:bg-green-700 px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium transition-all duration-200"
@@ -553,7 +553,7 @@ function App() {
                 transition={{ duration: 0.3 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" 
+                  src="/picvid/photosai1.jpg" 
                   alt="Sai Thoran" 
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-cyan-400/30"
                   loading="lazy"
@@ -791,13 +791,18 @@ function App() {
       {/* OPTIMIZED Certifications Section - Smooth and fast */}
       <section id="certifications" className="py-20 md:py-32 relative overflow-hidden min-h-screen" ref={certificationsRef}>
         {/* Static background image - no animation for better performance */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("https://i.pinimg.com/originals/b0/72/b4/b072b454c263e9ebe2ab3063b4907480.gif")',
-            filter: 'brightness(4.0) contrast(1.0)'
-          }}
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover brightness-[4.0] contrast-[1.0]"
+          >
+            <source src="/picvid/cb.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/70 to-black/80" />
         
         <div className="container mx-auto px-4 md:px-8 lg:px-32 relative z-10 flex flex-col justify-center min-h-screen">
